@@ -1,13 +1,5 @@
 # Sorting Algorithms
 # BubbleSort, SelectionSort, InsertionSort
-def Bubblesort(number):
-    k=0
-    for i in range(len(number)):
-        for j in range(i+1,len(number)):
-            if number[j]<number[i]:
-                number[j],number[i]=number[i],number[j]
-                k+=1
-    print(k)
 def Selectionsort(num):
     h=0
     for i in range(len(num)):
@@ -18,6 +10,14 @@ def Selectionsort(num):
                 h+=1
         num[i],num[max]=num[max],num[i]
     print(h)
+def Bubblesort(number):
+    k=0
+    for i in range(len(number)):
+        for j in range(i+1,len(number)):
+            if number[j]<number[i]:
+                number[j],number[i]=number[i],number[j]
+                k+=1
+    print(k)
 def Insertionsort(num):
     t=0
     for i in range(1,len(num)):
