@@ -29,7 +29,5 @@ def Insertionsort(num):
         num[j+1]=a
     print(t)
 ls=[0,9,3,4,5,2,7,8,1]
-#Bubblesort(ls)
-#Selectionsort(ls)
 Insertionsort(ls)
 print(ls)
